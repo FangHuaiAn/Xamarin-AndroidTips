@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace AndroidTips
 {
-	[Activity (Label = "NotificationProcessingActivity")]			
+	[Activity (Label = "處理 Local Notification")]			
 	public class NotificationProcessingActivity : Activity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)

@@ -55,14 +55,14 @@ namespace AndroidTips
 				//
 
 				NotificationCompat.Builder builder = new NotificationCompat.Builder (this)
-					.SetAutoCancel (true)                    // Dismiss from the notif. area when clicked
-					.SetContentIntent (resultPendingIntent)  // Start 2nd activity when the intent is clicked.
-					.SetContentTitle ("Android Tips")      // Set its title
+					.SetAutoCancel (true)                    // 
+					.SetContentIntent (resultPendingIntent)  // 使用者按下通知後，負責處理的 Activity
+					.SetContentTitle ("Android Tips")      // Title
 					.SetNumber (1)                       // Display the count in the Content Info
-					.SetSmallIcon(Resource.Drawable.ic_stat_button_click)  // Display this icon
-					.SetContentText (txtMessage.Text); // The message to display.
+					.SetSmallIcon(Resource.Drawable.ic_stat_button_click)  // Icon，必備
+					.SetContentText (txtMessage.Text); // 要顯示的訊息
 
-				// Finally, publish the notification:
+				// 註冊系統服務
 				NotificationManager notificationManager = 
 					(NotificationManager)GetSystemService(Context.NotificationService);
 				

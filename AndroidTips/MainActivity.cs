@@ -1,6 +1,16 @@
-using Android.App;
-using Android.Widget;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
 using Android.OS;
+using Android.App;
+using Android.Util;
+using Android.Widget;
+using Android.Content;
+using Android.Gms.Common;
+
+using Debug = System.Diagnostics.Debug ;
 
 namespace AndroidTips
 {
@@ -30,6 +40,63 @@ namespace AndroidTips
 			btnLocalNotification.Click += delegate {
 				StartActivity( typeof( LocalNotificationActivity ));
 			};
+
+			if (IsPlayServicesAvailable()  ) {
+				var intent = new Intent (this, typeof (RegistrationIntentService));
+				StartService (intent);
+			}
+		}
+
+		public bool IsPlayServicesAvailable ()
+		{
+			int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable (this);
+			if (resultCode != ConnectionResult.Success)
+			{
+				if (GoogleApiAvailability.Instance.IsUserResolvableError (resultCode)) {
+					var errorMessage = GoogleApiAvailability.Instance.GetErrorString (resultCode);
+
+					ShowAlert( errorMessage, "確定", (sender, args)=>{}, "", null );
+					return true;
+				}
+				else
+				{
+					ShowAlert( "Google Play Service 未安裝", "結束 App", (sender, args)=>{
+						Finish ();
+					}, "", null );
+
+				}
+				return false;
+			}
+			else
+			{
+				ShowAlert( "Google Play Services 已安裝", "確定", (sender, args)=>{
+
+					Debug.WriteLine("Click positiveButton");
+
+				}, "", null );
+				return true;
+			}
+		}
+
+		private void ShowAlert(string title, 
+			string positiveButtonTitle, EventHandler<Android.Content.DialogClickEventArgs> positiveButtonClickHandle,
+			string negativeButtonTitle, EventHandler<Android.Content.DialogClickEventArgs> negativeButtonClickHandle
+			){
+
+			AlertDialog.Builder alert = new AlertDialog.Builder (this);
+
+			alert.SetTitle (title);
+
+			alert.SetPositiveButton (positiveButtonTitle, positiveButtonClickHandle);
+
+			if (string.IsNullOrEmpty (negativeButtonTitle)) {
+				alert.SetNegativeButton (negativeButtonTitle, negativeButtonClickHandle);
+			}
+
+			RunOnUiThread (() => {
+				alert.Show();
+			} );
+		
 		}
 	}
 }
