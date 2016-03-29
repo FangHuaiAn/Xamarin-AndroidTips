@@ -25,6 +25,11 @@ namespace AndroidTips
 			btnImageScaleType.Click += delegate {
 				StartActivity( typeof( ImageScaleTypeActivity ));
 			};
+
+			var btnLocalNotification = FindViewById<Button>(Resource.Id.btnLocalNotification);
+			btnLocalNotification.Click += delegate {
+				StartActivity( typeof( LocalNotificationActivity ));
+			};
 		}
 	}
 }

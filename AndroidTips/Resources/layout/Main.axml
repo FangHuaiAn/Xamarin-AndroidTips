@@ -13,4 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Image ScaleType" />
+    <Button
+        android:id="@+id/btnLocalNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local Notification" />
 </LinearLayout>

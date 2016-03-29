@@ -45,7 +45,10 @@ namespace AndroidTips
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int idf = 2130837504;
+			public const int ic_stat_button_click = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int idf = 2130837505;
 			
 			static Drawable()
 			{
@@ -63,17 +66,29 @@ namespace AndroidTips
 			// aapt resource value: 0x7f060002
 			public const int btnGo = 2131099650;
 			
-			// aapt resource value: 0x7f060006
-			public const int btnImageScaleType = 2131099654;
+			// aapt resource value: 0x7f060008
+			public const int btnImageScaleType = 2131099656;
 			
-			// aapt resource value: 0x7f060005
-			public const int btnKeyboard = 2131099653;
+			// aapt resource value: 0x7f060007
+			public const int btnKeyboard = 2131099655;
+			
+			// aapt resource value: 0x7f060009
+			public const int btnLocalNotification = 2131099657;
+			
+			// aapt resource value: 0x7f060006
+			public const int btnSend = 2131099654;
 			
 			// aapt resource value: 0x7f060000
 			public const int scaleImageView = 2131099648;
 			
 			// aapt resource value: 0x7f060001
 			public const int selectImageScaleType = 2131099649;
+			
+			// aapt resource value: 0x7f060005
+			public const int txtMessage = 2131099653;
+			
+			// aapt resource value: 0x7f06000a
+			public const int txtReceived = 2131099658;
 			
 			// aapt resource value: 0x7f060003
 			public const int txtUrl = 2131099651;
@@ -101,7 +116,13 @@ namespace AndroidTips
 			public const int KeyboardInputView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int Main = 2130968578;
+			public const int LocalNotificationView = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int Main = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int NotificationProcessingView = 2130968580;
 			
 			static Layout()
 			{
