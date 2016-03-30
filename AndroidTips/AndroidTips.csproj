@@ -73,6 +73,7 @@
     <Compile Include="RegistrationIntentService.cs" />
     <Compile Include="MyInstanceIDListenerService.cs" />
     <Compile Include="MyGcmListenerService.cs" />
+    <Compile Include="PlayVideoActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -94,6 +95,7 @@
     <AndroidResource Include="Resources\layout\LocalNotificationView.axml" />
     <AndroidResource Include="Resources\drawable\ic_stat_button_click.png" />
     <AndroidResource Include="Resources\layout\NotificationProcessingView.axml" />
+    <AndroidResource Include="Resources\layout\PlayVideoView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -109,5 +111,8 @@
       <Version>29.0.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sample_iPod.m4v" />
   </ItemGroup>
 </Project>

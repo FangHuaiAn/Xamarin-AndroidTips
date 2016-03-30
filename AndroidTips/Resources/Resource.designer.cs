@@ -304,6 +304,9 @@ namespace AndroidTips
 			// aapt resource value: 0x7f080012
 			public const int btnLocalNotification = 2131230738;
 			
+			// aapt resource value: 0x7f080013
+			public const int btnPlayVideo = 2131230739;
+			
 			// aapt resource value: 0x7f08000f
 			public const int btnSend = 2131230735;
 			
@@ -331,11 +334,14 @@ namespace AndroidTips
 			// aapt resource value: 0x7f08000e
 			public const int txtMessage = 2131230734;
 			
-			// aapt resource value: 0x7f080013
-			public const int txtReceived = 2131230739;
+			// aapt resource value: 0x7f080014
+			public const int txtReceived = 2131230740;
 			
 			// aapt resource value: 0x7f08000c
 			public const int txtUrl = 2131230732;
+			
+			// aapt resource value: 0x7f080015
+			public const int videoView = 2131230741;
 			
 			// aapt resource value: 0x7f08000d
 			public const int webView = 2131230733;
@@ -386,6 +392,9 @@ namespace AndroidTips
 			
 			// aapt resource value: 0x7f040004
 			public const int NotificationProcessingView = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int PlayVideoView = 2130968581;
 			
 			static Layout()
 			{

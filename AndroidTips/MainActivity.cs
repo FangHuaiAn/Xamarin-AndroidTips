@@ -41,6 +41,12 @@ namespace AndroidTips
 				StartActivity( typeof( LocalNotificationActivity ));
 			};
 
+			var btnPlayVideo = FindViewById<Button>(Resource.Id.btnPlayVideo);
+			btnPlayVideo.Click += delegate {
+				StartActivity( typeof( PlayVideoActivity ));
+			};
+
+
 			if (IsPlayServicesAvailable()  ) {
 				var intent = new Intent (this, typeof (RegistrationIntentService));
 				StartService (intent);

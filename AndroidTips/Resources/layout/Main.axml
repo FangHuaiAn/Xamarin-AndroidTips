@@ -18,4 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Local Notification" />
+    <Button
+        android:id="@+id/btnPlayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Video" />
 </LinearLayout>
