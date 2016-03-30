@@ -3,11 +3,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
+using Android.OS;
 using Android.App;
 using Android.Util;
 using Android.Content;
 using Android.Gms.Gcm;
 using Android.Gms.Gcm.Iid;
+using Android.Gms.Common;
 
 using Debug = System.Diagnostics.Debug;
 
@@ -35,6 +37,12 @@ namespace AndroidTips
 					Log.Info ("AndroidTips", "GCM Registration Token: " + token);
 					SendRegistrationToAppServer (token);
 					Subscribe (token);
+
+					// If receiving "Not Registered" failures when sending a notification
+					// remove token and instanceId
+
+					//instanceID.DeleteToken( token, GoogleCloudMessaging.InstanceIdScope );
+					//instanceID.DeleteInstanceID();
 				}
 			}
 			catch (Exception ex)
@@ -55,14 +63,6 @@ namespace AndroidTips
 			var pubSub = GcmPubSub.GetInstance(this);
 			pubSub.Subscribe(token, "/topics/global", null);
 		}
-
-		/*
-		[InstanceID] token: d7ZLT7Y8AEk:APA91bFQ1FMj0nrSrHnC52QG5P-YX2KFLLJNCSQbfj-nwKY5FbnIj1DzJaw9iSsk1Sh3v2quO8hiLVX1Is5kv2zOB7grKJFktbQ-p22NfxLALSRYgHRJt3-hhXvlu-yQjSNYpFpvaP8v
-		token:d7ZLT7Y8AEk:APA91bFQ1FMj0nrSrHnC52QG5P-YX2KFLLJNCSQbfj-nwKY5FbnIj1DzJaw9iSsk1Sh3v2quO8hiLVX1Is5kv2zOB7grKJFktbQ-p22NfxLALSRYgHRJt3-hhXvlu-yQjSNYpFpvaP8v
-		[AndroidTips] GCM Registration Token: d7ZLT7Y8AEk:APA91bFQ1FMj0nrSrHnC52QG5P-YX2KFLLJNCSQbfj-nwKY5FbnIj1DzJaw9iSsk1Sh3v2quO8hiLVX1Is5kv2zOB7grKJFktbQ-p22NfxLALSRYgHRJt3-hhXvlu-yQjSNYpFpvaP8v
-		token:d7ZLT7Y8AEk:APA91bFQ1FMj0nrSrHnC52QG5P-YX2KFLLJNCSQbfj-nwKY5FbnIj1DzJaw9iSsk1Sh3v2quO8hiLVX1Is5kv2zOB7grKJFktbQ-p22NfxLALSRYgHRJt3-hhXvlu-yQjSNYpFpvaP8v
-		[InstanceID] token: 
-		*/
 
 	}
 }
