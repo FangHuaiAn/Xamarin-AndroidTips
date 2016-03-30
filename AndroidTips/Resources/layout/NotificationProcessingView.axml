@@ -7,5 +7,5 @@
         android:id="@+id/txtReceived"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="許功蓋" />
+        android:text="訊息" />
 </LinearLayout>
