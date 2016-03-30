@@ -45,11 +45,13 @@ namespace AndroidTips
 
 				// Construct a back stack for cross-task navigation:
 				TaskStackBuilder stackBuilder = TaskStackBuilder.Create (this);
-				stackBuilder.AddParentStack (Java.Lang.Class.FromType(typeof(NotificationProcessingActivity )));
+				stackBuilder.AddParentStack (
+					Java.Lang.Class.FromType(typeof(NotificationProcessingActivity )));
 				stackBuilder.AddNextIntent (resultIntent);
 
 				// Create the PendingIntent with the back stack:            
-				PendingIntent resultPendingIntent = stackBuilder.GetPendingIntent (0, (int)PendingIntentFlags.UpdateCurrent);
+				PendingIntent resultPendingIntent = 
+					stackBuilder.GetPendingIntent (0, (int)PendingIntentFlags.UpdateCurrent);
 				
 
 				//

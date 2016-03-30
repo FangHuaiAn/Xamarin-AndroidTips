@@ -61,6 +61,15 @@
     <Reference Include="Xamarin.GooglePlayServices.Gcm">
       <HintPath>..\packages\Xamarin.GooglePlayServices.Gcm.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Gcm.dll</HintPath>
     </Reference>
+    <Reference Include="zxing.portable">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.0.4.17\lib\MonoAndroid403\zxing.portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.0.4.17\lib\MonoAndroid403\ZXing.Net.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXingNetMobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.0.4.17\lib\MonoAndroid403\ZXingNetMobile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -74,6 +83,7 @@
     <Compile Include="MyInstanceIDListenerService.cs" />
     <Compile Include="MyGcmListenerService.cs" />
     <Compile Include="PlayVideoActivity.cs" />
+    <Compile Include="QRCodeActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -96,6 +106,7 @@
     <AndroidResource Include="Resources\drawable\ic_stat_button_click.png" />
     <AndroidResource Include="Resources\layout\NotificationProcessingView.axml" />
     <AndroidResource Include="Resources\layout\PlayVideoView.axml" />
+    <AndroidResource Include="Resources\layout\QRCodeView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -109,6 +120,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="googleplayservices-gcm">
       <Version>29.0.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="zxing.net.mobile">
+      <Version>2.0.4.17</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

@@ -3,6 +3,7 @@ using Android.Content;
 using Android.OS;
 using Android.Gms.Gcm;
 using Android.Util;
+using Android.Support.V4.App;
 
 namespace AndroidTips
 {
@@ -23,7 +24,7 @@ namespace AndroidTips
 			intent.AddFlags (ActivityFlags.ClearTop);
 			var pendingIntent = PendingIntent.GetActivity (this, 0, intent, PendingIntentFlags.OneShot);
 
-			var notificationBuilder = new Notification.Builder(this)
+			var notificationBuilder = new NotificationCompat.Builder(this)
 				.SetSmallIcon (Resource.Drawable.ic_stat_button_click)
 				.SetContentTitle ("GCM Message")
 				.SetContentText (message)

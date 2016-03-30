@@ -36,7 +36,7 @@ namespace AndroidTips
 			_webView = FindViewById<WebView> (Resource.Id.webView);
 
 
-			InputMethodManager _InputMethodManager  = 
+			_InputMethodManager  = 
 				(InputMethodManager)GetSystemService(Context.InputMethodService);
 
 			_btnGo.Click += (object sender, EventArgs e) => {

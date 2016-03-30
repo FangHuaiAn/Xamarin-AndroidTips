@@ -10,6 +10,9 @@ using Android.Widget;
 using Android.Content;
 using Android.Gms.Common;
 
+using ZXing;
+using ZXing.Mobile;
+
 using Debug = System.Diagnostics.Debug ;
 
 namespace AndroidTips
@@ -23,6 +26,9 @@ namespace AndroidTips
 			Xamarin.Insights.Initialize (global::AndroidTips.XamarinInsights.ApiKey, this);
 			base.OnCreate (savedInstanceState);
 			// Set our view from the "main" layout resource
+
+			MobileBarcodeScanner.Initialize (Application);
+
 			SetContentView (Resource.Layout.Main);
 			// Get our button from the layout resource,
 			// and attach an event to it
@@ -44,6 +50,11 @@ namespace AndroidTips
 			var btnPlayVideo = FindViewById<Button>(Resource.Id.btnPlayVideo);
 			btnPlayVideo.Click += delegate {
 				StartActivity( typeof( PlayVideoActivity ));
+			};
+
+			var btnQRCode = FindViewById<Button>(Resource.Id.btnQRCode);
+			btnQRCode.Click += delegate {
+				StartActivity( typeof( QRCodeActivity ));
 			};
 
 
@@ -75,11 +86,14 @@ namespace AndroidTips
 			}
 			else
 			{
+				
 				ShowAlert( "Google Play Services 已安裝", "確定", (sender, args)=>{
 
 					Debug.WriteLine("Click positiveButton");
 
 				}, "", null );
+
+
 				return true;
 			}
 		}

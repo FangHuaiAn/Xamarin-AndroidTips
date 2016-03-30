@@ -26,6 +26,9 @@ namespace AndroidTips
 		
 		public static void UpdateIdValues()
 		{
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::AndroidTips.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::AndroidTips.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::AndroidTips.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Attribute
@@ -307,8 +310,17 @@ namespace AndroidTips
 			// aapt resource value: 0x7f080013
 			public const int btnPlayVideo = 2131230739;
 			
+			// aapt resource value: 0x7f080014
+			public const int btnQRCode = 2131230740;
+			
+			// aapt resource value: 0x7f080017
+			public const int btnScan = 2131230743;
+			
 			// aapt resource value: 0x7f08000f
 			public const int btnSend = 2131230735;
+			
+			// aapt resource value: 0x7f080019
+			public const int contentFrame = 2131230745;
 			
 			// aapt resource value: 0x7f080004
 			public const int dark = 2131230724;
@@ -334,14 +346,17 @@ namespace AndroidTips
 			// aapt resource value: 0x7f08000e
 			public const int txtMessage = 2131230734;
 			
-			// aapt resource value: 0x7f080014
-			public const int txtReceived = 2131230740;
+			// aapt resource value: 0x7f080018
+			public const int txtQRResult = 2131230744;
+			
+			// aapt resource value: 0x7f080015
+			public const int txtReceived = 2131230741;
 			
 			// aapt resource value: 0x7f08000c
 			public const int txtUrl = 2131230732;
 			
-			// aapt resource value: 0x7f080015
-			public const int videoView = 2131230741;
+			// aapt resource value: 0x7f080016
+			public const int videoView = 2131230742;
 			
 			// aapt resource value: 0x7f08000d
 			public const int webView = 2131230733;
@@ -395,6 +410,15 @@ namespace AndroidTips
 			
 			// aapt resource value: 0x7f040005
 			public const int PlayVideoView = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int QRCodeView = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int zxingscanneractivitylayout = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int zxingscannerfragmentlayout = 2130968584;
 			
 			static Layout()
 			{

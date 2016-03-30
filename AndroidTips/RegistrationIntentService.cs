@@ -27,21 +27,19 @@ namespace AndroidTips
 		{
 			try
 			{
-				Log.Info ("AndroidTips", "Calling InstanceID.GetToken");
 				lock (locker)
 				{
 					var instanceID = InstanceID.GetInstance (this);
-					var token = instanceID.GetToken (
-						"783702026879", GoogleCloudMessaging.InstanceIdScope, null);
+					var token = instanceID.GetToken ("783702026879", GoogleCloudMessaging.InstanceIdScope, null);
 
 					Log.Info ("AndroidTips", "GCM Registration Token: " + token);
 					SendRegistrationToAppServer (token);
 					Subscribe (token);
 				}
 			}
-			catch (Exception e)
+			catch (Exception ex)
 			{
-				Log.Debug("AndroidTips", "Failed to get a registration token");
+				Log.Debug("AndroidTips", "Failed to get a registration token" + ex.Message);
 				return;
 			}
 		}
