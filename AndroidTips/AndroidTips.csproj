@@ -84,6 +84,7 @@
     <Compile Include="MyGcmListenerService.cs" />
     <Compile Include="PlayVideoActivity.cs" />
     <Compile Include="QRCodeActivity.cs" />
+    <Compile Include="StartCameraActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -107,6 +108,7 @@
     <AndroidResource Include="Resources\layout\NotificationProcessingView.axml" />
     <AndroidResource Include="Resources\layout\PlayVideoView.axml" />
     <AndroidResource Include="Resources\layout\QRCodeView.axml" />
+    <AndroidResource Include="Resources\layout\StartCameraView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
