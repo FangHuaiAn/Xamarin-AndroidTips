@@ -5,21 +5,19 @@
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="com.google.android.c2dm.permission.SEND" />
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="com.tripim.androidtips.permission.C2D_MESSAGE" />
-
-    <permission android:name="com.tripim.androidtips.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-
-
-
+	<uses-permission android:name="com.tripim.androidtips.permission.C2D_MESSAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_PROFILE" />
+	<uses-permission android:name="android.permission.READ_OWNER_DATA" />
+	<permission android:name="com.tripim.androidtips.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	<application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
-		<receiver android:name="com.google.android.gms.gcm.GcmReceiver" 
-              android:exported="true" 
-              android:permission="com.google.android.c2dm.permission.SEND">
-        <intent-filter>
-            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-            <category android:name="com.tripim.androidtips" />
-        </intent-filter>
-    </receiver>
+		<receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="com.tripim.androidtips" />
+			</intent-filter>
+		</receiver>
 	</application>
 </manifest>

@@ -335,7 +335,7 @@ namespace AndroidTips
 			public const int icon_only = 2131230720;
 			
 			// aapt resource value: 0x7f08001b
-			public const int imageCamera = 2131230747;
+			public const int imageResult = 2131230747;
 			
 			// aapt resource value: 0x7f080005
 			public const int light = 2131230725;

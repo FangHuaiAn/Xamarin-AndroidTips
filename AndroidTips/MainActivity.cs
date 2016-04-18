@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
@@ -8,7 +9,10 @@ using Android.App;
 using Android.Util;
 using Android.Widget;
 using Android.Content;
+using Android.Graphics;
 using Android.Gms.Common;
+
+using Java.IO;
 
 using ZXing;
 using ZXing.Mobile;
@@ -55,6 +59,11 @@ namespace AndroidTips
 			var btnQRCode = FindViewById<Button>(Resource.Id.btnQRCode);
 			btnQRCode.Click += delegate {
 				StartActivity( typeof( QRCodeActivity ));
+			};
+
+			var btnCamera = FindViewById<Button>(Resource.Id.btnCamera);
+			btnCamera.Click += delegate {
+				StartActivity( typeof( StartCameraActivity ));
 			};
 
 
@@ -116,7 +125,13 @@ namespace AndroidTips
 			RunOnUiThread (() => {
 				alert.Show();
 			} );
-		
+			//App._file	{/storage/emulated/0/Pictures/AndroidTips/Tips_5027a27b-631e-4dee-bb22-d9d313fa12ec.jpg}	Java.IO.File
 		}
+	}
+
+	public static class App {
+		public static File _file;
+		public static File _dir;
+		public static Bitmap bitmap;
 	}
 }
