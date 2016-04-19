@@ -66,6 +66,12 @@ namespace AndroidTips
 				StartActivity( typeof( StartCameraActivity ));
 			};
 
+			var btnGoogleSignIn = FindViewById<Button>(Resource.Id.btnGoogleSignIn);
+			btnGoogleSignIn.Click += delegate {
+				StartActivity( typeof( GoogleSignInActivity ));
+			};
+
+
 
 			if (IsPlayServicesAvailable()  ) {
 				var intent = new Intent (this, typeof (RegistrationIntentService));
