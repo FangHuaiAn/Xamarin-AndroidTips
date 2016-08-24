@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Collections.Generic;
 
 using Android.OS;
 using Android.App;
 using Android.Media;
 using Android.Views;
 using Android.Widget;
-using Android.Runtime;
-using Android.Content;
 
 namespace AndroidTips
 {

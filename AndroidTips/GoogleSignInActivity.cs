@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Collections.Generic;
 
 using Android.OS;
 using Android.App;
@@ -9,7 +6,6 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Content;
-using Android.Runtime;
 using Android.Gms.Plus;
 using Android.Gms.Common;
 using Android.Gms.Common.Apis;

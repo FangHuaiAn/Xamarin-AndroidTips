@@ -1,23 +1,16 @@
 using System;
-using System.Linq;
-using System.Drawing;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 using Android.OS;
 using Android.App;
-using Android.Util;
 using Android.Widget;
 using Android.Content;
 using Android.Graphics;
 using Android.Gms.Common;
 
 using Java.IO;
-
-using ZXing;
 using ZXing.Mobile;
 
-using Debug = System.Diagnostics.Debug ;
+using Debug = System.Diagnostics.Debug;
 
 namespace AndroidTips
 {
@@ -27,7 +20,7 @@ namespace AndroidTips
 		
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
-			Xamarin.Insights.Initialize (global::AndroidTips.XamarinInsights.ApiKey, this);
+			
 			base.OnCreate (savedInstanceState);
 			// Set our view from the "main" layout resource
 
@@ -69,6 +62,16 @@ namespace AndroidTips
 			var btnGoogleSignIn = FindViewById<Button>(Resource.Id.btnGoogleSignIn);
 			btnGoogleSignIn.Click += delegate {
 				StartActivity( typeof( GoogleSignInActivity ));
+			};
+
+			var btnTouch = FindViewById<Button> (Resource.Id.btnTouch);
+			btnTouch.Click += delegate {
+				StartActivity (typeof (TouchActivity));
+			};
+
+			var btnGesture = FindViewById<Button> (Resource.Id.btnGesture);
+			btnGesture.Click += delegate {
+				StartActivity (typeof (GestureActivity));
 			};
 
 
@@ -114,8 +117,8 @@ namespace AndroidTips
 		}
 
 		private void ShowAlert(string title, 
-			string positiveButtonTitle, EventHandler<Android.Content.DialogClickEventArgs> positiveButtonClickHandle,
-			string negativeButtonTitle, EventHandler<Android.Content.DialogClickEventArgs> negativeButtonClickHandle
+			string positiveButtonTitle, EventHandler<DialogClickEventArgs> positiveButtonClickHandle,
+			string negativeButtonTitle, EventHandler<DialogClickEventArgs> negativeButtonClickHandle
 			){
 
 			AlertDialog.Builder alert = new AlertDialog.Builder (this);

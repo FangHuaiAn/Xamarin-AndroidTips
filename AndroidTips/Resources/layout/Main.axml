@@ -38,4 +38,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Google Sign-In" />
+    <Button
+        android:id="@+id/btnTouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch" />
+    <Button
+        android:id="@+id/btnGesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gesture" />
 </LinearLayout>
