@@ -48,4 +48,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gesture" />
+    <Button
+        android:id="@+id/btnSharedPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Preference" />
+    <Button
+        android:id="@+id/btnFileIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File IO" />
+    <Button
+        android:id="@+id/btnSQLite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite" />
 </LinearLayout>

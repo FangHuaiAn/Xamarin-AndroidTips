@@ -307,59 +307,86 @@ namespace AndroidTips
 			// aapt resource value: 0x7f080003
 			public const int auto = 2131230723;
 			
-			// aapt resource value: 0x7f08001c
-			public const int btnCamera = 2131230748;
+			// aapt resource value: 0x7f08001e
+			public const int btnCamera = 2131230750;
+			
+			// aapt resource value: 0x7f080023
+			public const int btnFileIO = 2131230755;
+			
+			// aapt resource value: 0x7f080021
+			public const int btnGesture = 2131230753;
+			
+			// aapt resource value: 0x7f080014
+			public const int btnGo = 2131230740;
 			
 			// aapt resource value: 0x7f08001f
-			public const int btnGesture = 2131230751;
-			
-			// aapt resource value: 0x7f080012
-			public const int btnGo = 2131230738;
-			
-			// aapt resource value: 0x7f08001d
-			public const int btnGoogleSignIn = 2131230749;
-			
-			// aapt resource value: 0x7f080018
-			public const int btnImageScaleType = 2131230744;
-			
-			// aapt resource value: 0x7f080017
-			public const int btnKeyboard = 2131230743;
-			
-			// aapt resource value: 0x7f080019
-			public const int btnLocalNotification = 2131230745;
-			
-			// aapt resource value: 0x7f080024
-			public const int btnOpenCamera = 2131230756;
+			public const int btnGoogleSignIn = 2131230751;
 			
 			// aapt resource value: 0x7f08001a
-			public const int btnPlayVideo = 2131230746;
+			public const int btnImageScaleType = 2131230746;
+			
+			// aapt resource value: 0x7f080019
+			public const int btnKeyboard = 2131230745;
 			
 			// aapt resource value: 0x7f08001b
-			public const int btnQRCode = 2131230747;
+			public const int btnLocalNotification = 2131230747;
 			
-			// aapt resource value: 0x7f080022
-			public const int btnScan = 2131230754;
+			// aapt resource value: 0x7f08002d
+			public const int btnOpenCamera = 2131230765;
 			
-			// aapt resource value: 0x7f080016
-			public const int btnSend = 2131230742;
+			// aapt resource value: 0x7f08001c
+			public const int btnPlayVideo = 2131230748;
 			
-			// aapt resource value: 0x7f08001e
-			public const int btnTouch = 2131230750;
+			// aapt resource value: 0x7f08001d
+			public const int btnQRCode = 2131230749;
+			
+			// aapt resource value: 0x7f080024
+			public const int btnSQLite = 2131230756;
 			
 			// aapt resource value: 0x7f080027
-			public const int contentFrame = 2131230759;
+			public const int btnScan = 2131230759;
+			
+			// aapt resource value: 0x7f080018
+			public const int btnSend = 2131230744;
+			
+			// aapt resource value: 0x7f080022
+			public const int btnSharedPreference = 2131230754;
+			
+			// aapt resource value: 0x7f080020
+			public const int btnTouch = 2131230752;
+			
+			// aapt resource value: 0x7f080030
+			public const int contentFrame = 2131230768;
 			
 			// aapt resource value: 0x7f080004
 			public const int dark = 2131230724;
 			
-			// aapt resource value: 0x7f08000f
-			public const int disconnect_button = 2131230735;
+			// aapt resource value: 0x7f08000a
+			public const int data_fileview_btnRead = 2131230730;
+			
+			// aapt resource value: 0x7f080009
+			public const int data_fileview_btnWrite = 2131230729;
+			
+			// aapt resource value: 0x7f08002a
+			public const int data_sharedpreference_btnRead = 2131230762;
+			
+			// aapt resource value: 0x7f080029
+			public const int data_sharedpreference_btnWrite = 2131230761;
+			
+			// aapt resource value: 0x7f08002c
+			public const int data_sqliteview_btnRead = 2131230764;
+			
+			// aapt resource value: 0x7f08002b
+			public const int data_sqliteview_btnWrite = 2131230763;
+			
+			// aapt resource value: 0x7f080011
+			public const int disconnect_button = 2131230737;
 			
 			// aapt resource value: 0x7f080000
 			public const int icon_only = 2131230720;
 			
-			// aapt resource value: 0x7f080025
-			public const int imageResult = 2131230757;
+			// aapt resource value: 0x7f08002e
+			public const int imageResult = 2131230766;
 			
 			// aapt resource value: 0x7f080005
 			public const int light = 2131230725;
@@ -367,53 +394,53 @@ namespace AndroidTips
 			// aapt resource value: 0x7f080008
 			public const int none = 2131230728;
 			
-			// aapt resource value: 0x7f080010
-			public const int scaleImageView = 2131230736;
+			// aapt resource value: 0x7f080012
+			public const int scaleImageView = 2131230738;
 			
-			// aapt resource value: 0x7f080011
-			public const int selectImageScaleType = 2131230737;
-			
-			// aapt resource value: 0x7f08000c
-			public const int sign_in_button = 2131230732;
-			
-			// aapt resource value: 0x7f08000d
-			public const int sign_out_and_disconnect = 2131230733;
+			// aapt resource value: 0x7f080013
+			public const int selectImageScaleType = 2131230739;
 			
 			// aapt resource value: 0x7f08000e
-			public const int sign_out_button = 2131230734;
+			public const int sign_in_button = 2131230734;
+			
+			// aapt resource value: 0x7f08000f
+			public const int sign_out_and_disconnect = 2131230735;
+			
+			// aapt resource value: 0x7f080010
+			public const int sign_out_button = 2131230736;
 			
 			// aapt resource value: 0x7f080001
 			public const int standard = 2131230721;
 			
-			// aapt resource value: 0x7f08000b
-			public const int status = 2131230731;
+			// aapt resource value: 0x7f08000d
+			public const int status = 2131230733;
 			
-			// aapt resource value: 0x7f08000a
-			public const int title_text = 2131230730;
+			// aapt resource value: 0x7f08000c
+			public const int title_text = 2131230732;
 			
-			// aapt resource value: 0x7f080026
-			public const int touchView = 2131230758;
+			// aapt resource value: 0x7f08002f
+			public const int touchView = 2131230767;
+			
+			// aapt resource value: 0x7f080017
+			public const int txtMessage = 2131230743;
+			
+			// aapt resource value: 0x7f080028
+			public const int txtQRResult = 2131230760;
+			
+			// aapt resource value: 0x7f080025
+			public const int txtReceived = 2131230757;
 			
 			// aapt resource value: 0x7f080015
-			public const int txtMessage = 2131230741;
+			public const int txtUrl = 2131230741;
 			
-			// aapt resource value: 0x7f080023
-			public const int txtQRResult = 2131230755;
+			// aapt resource value: 0x7f08000b
+			public const int velocity_text_view = 2131230731;
 			
-			// aapt resource value: 0x7f080020
-			public const int txtReceived = 2131230752;
+			// aapt resource value: 0x7f080026
+			public const int videoView = 2131230758;
 			
-			// aapt resource value: 0x7f080013
-			public const int txtUrl = 2131230739;
-			
-			// aapt resource value: 0x7f080009
-			public const int velocity_text_view = 2131230729;
-			
-			// aapt resource value: 0x7f080021
-			public const int videoView = 2131230753;
-			
-			// aapt resource value: 0x7f080014
-			public const int webView = 2131230740;
+			// aapt resource value: 0x7f080016
+			public const int webView = 2131230742;
 			
 			// aapt resource value: 0x7f080002
 			public const int wide = 2131230722;
@@ -448,43 +475,52 @@ namespace AndroidTips
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int GestureDemoView = 2130968576;
+			public const int FileView = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int GoogleSignInView = 2130968577;
+			public const int GestureDemoView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int ImageScaleTypeView = 2130968578;
+			public const int GoogleSignInView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int KeyboardInputView = 2130968579;
+			public const int ImageScaleTypeView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int LocalNotificationView = 2130968580;
+			public const int KeyboardInputView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int Main = 2130968581;
+			public const int LocalNotificationView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int NotificationProcessingView = 2130968582;
+			public const int Main = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int PlayVideoView = 2130968583;
+			public const int NotificationProcessingView = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int QRCodeView = 2130968584;
+			public const int PlayVideoView = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int StartCameraView = 2130968585;
+			public const int QRCodeView = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int TouchDemoView = 2130968586;
+			public const int SharedPrefenceView = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int zxingscanneractivitylayout = 2130968587;
+			public const int SQLiteView = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int zxingscannerfragmentlayout = 2130968588;
+			public const int StartCameraView = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int TouchDemoView = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int zxingscanneractivitylayout = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int zxingscannerfragmentlayout = 2130968591;
 			
 			static Layout()
 			{

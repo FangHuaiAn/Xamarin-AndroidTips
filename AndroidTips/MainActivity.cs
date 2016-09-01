@@ -74,6 +74,20 @@ namespace AndroidTips
 				StartActivity (typeof (GestureActivity));
 			};
 
+			var btnSharedPreference = FindViewById<Button> (Resource.Id.btnSharedPreference);
+			btnSharedPreference.Click += delegate {
+				StartActivity (typeof (SharedPreferenceActivity));
+			};
+
+			var btnFileIO = FindViewById<Button> (Resource.Id.btnFileIO);
+			btnFileIO.Click += delegate {
+				StartActivity (typeof (FileActivity));
+			};
+
+			var btnSQLite = FindViewById<Button> (Resource.Id.btnSQLite);
+			btnSQLite.Click += delegate {
+				StartActivity (typeof (SQLiteActivity));
+			};
 
 
 			if (IsPlayServicesAvailable()  ) {
