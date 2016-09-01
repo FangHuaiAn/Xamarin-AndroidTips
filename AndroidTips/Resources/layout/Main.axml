@@ -3,64 +3,79 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/btnKeyboard"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Keyboard" />
-    <Button
-        android:id="@+id/btnImageScaleType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Image ScaleType" />
-    <Button
-        android:id="@+id/btnLocalNotification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Local Notification" />
-    <Button
-        android:id="@+id/btnPlayVideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play Video" />
-    <Button
-        android:id="@+id/btnQRCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Scan QR Code" />
-    <Button
-        android:id="@+id/btnCamera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Camera" />
-    <Button
-        android:id="@+id/btnGoogleSignIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Google Sign-In" />
-    <Button
-        android:id="@+id/btnTouch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Touch" />
-    <Button
-        android:id="@+id/btnGesture"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Gesture" />
-    <Button
-        android:id="@+id/btnSharedPreference"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Shared Preference" />
-    <Button
-        android:id="@+id/btnFileIO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="File IO" />
-    <Button
-        android:id="@+id/btnSQLite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SQLite" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnKeyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keyboard" />
+            <Button
+                android:id="@+id/btnImageScaleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image ScaleType" />
+            <Button
+                android:id="@+id/btnLocalNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local Notification" />
+            <Button
+                android:id="@+id/btnPlayVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Video" />
+            <Button
+                android:id="@+id/btnQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code" />
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera" />
+            <Button
+                android:id="@+id/btnGoogleSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google Sign-In" />
+            <Button
+                android:id="@+id/btnTouch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Touch" />
+            <Button
+                android:id="@+id/btnGesture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gesture" />
+            <Button
+                android:id="@+id/btnSharedPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shared Preference" />
+            <Button
+                android:id="@+id/btnFileIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File IO" />
+            <Button
+                android:id="@+id/btnSQLite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQLite" />
+            <Button
+                android:id="@+id/btnDefaultLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Default Location" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

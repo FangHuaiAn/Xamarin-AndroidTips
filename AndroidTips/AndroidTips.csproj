@@ -108,6 +108,8 @@
     <Compile Include="Data\SQLiteActivity.cs" />
     <Compile Include="Data\WebServiceActivity.cs" />
     <Compile Include="Data\SharedPreferenceActivity.cs" />
+    <Compile Include="UIControls\SpinnerActivity.cs" />
+    <Compile Include="Location\BaseLocationActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -138,11 +140,14 @@
     <AndroidResource Include="Resources\layout\SharedPrefenceView.axml" />
     <AndroidResource Include="Resources\layout\SQLiteView.axml" />
     <AndroidResource Include="Resources\layout\FileView.axml" />
+    <AndroidResource Include="Resources\layout\BaseLocationView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Touch\" />
     <Folder Include="Data\" />
+    <Folder Include="UIControls\" />
+    <Folder Include="Location\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.12.3\build\MonoAndroid10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.12.3\build\MonoAndroid10\Xamarin.Insights.targets')" />

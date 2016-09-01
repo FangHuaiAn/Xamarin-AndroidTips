@@ -89,6 +89,11 @@ namespace AndroidTips
 				StartActivity (typeof (SQLiteActivity));
 			};
 
+			var btnDefaultLocation = FindViewById<Button> (Resource.Id.btnDefaultLocation);
+			btnDefaultLocation.Click += delegate {
+				StartActivity (typeof (BaseLocationActivity));
+			};
+
 
 			if (IsPlayServicesAvailable()  ) {
 				var intent = new Intent (this, typeof (RegistrationIntentService));
