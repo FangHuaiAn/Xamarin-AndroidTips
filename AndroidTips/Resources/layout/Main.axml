@@ -72,10 +72,20 @@
                 android:layout_height="wrap_content"
                 android:text="SQLite" />
             <Button
+                android:id="@+id/btnWebClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WebClient" />
+            <Button
                 android:id="@+id/btnDefaultLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Default Location" />
+            <Button
+                android:id="@+id/btnEasyLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy Location" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

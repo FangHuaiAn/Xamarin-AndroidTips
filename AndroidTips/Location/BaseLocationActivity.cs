@@ -116,7 +116,7 @@ namespace AndroidTips
 
 		#endregion
 
-		#region
+		#region Geocode
 
 		private async Task<Address> ReverseGeocodeCurrentLocation ()
 		{

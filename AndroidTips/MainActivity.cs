@@ -89,9 +89,19 @@ namespace AndroidTips
 				StartActivity (typeof (SQLiteActivity));
 			};
 
+			var btnWebClient = FindViewById<Button> (Resource.Id.btnWebClient);
+			btnWebClient.Click += delegate {
+				StartActivity (typeof (WebServiceActivity));
+			};
+
 			var btnDefaultLocation = FindViewById<Button> (Resource.Id.btnDefaultLocation);
 			btnDefaultLocation.Click += delegate {
 				StartActivity (typeof (BaseLocationActivity));
+			};
+
+			var btnEasyLocation = FindViewById<Button> (Resource.Id.btnEasyLocation);
+			btnEasyLocation.Click += delegate {
+				StartActivity (typeof (EasyLocationActivity));
 			};
 
 
