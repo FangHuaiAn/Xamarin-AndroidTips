@@ -34,11 +34,22 @@ namespace AndroidTips
 		}
 
 		public bool OnFling (MotionEvent e1, MotionEvent e2, float velocityX, float velocityY){
-			_textView.Text = $"Fling velocity: {velocityX} x {velocityY}" ;
+
+			RunOnUiThread (() => {
+				_textView.Text = $"Fling velocity: {velocityX} x {velocityY}";
+			});
+
 			return true;
 		}
 
-		public void OnLongPress (MotionEvent e) { }
+		public void OnLongPress (MotionEvent e) {
+
+			RunOnUiThread (() => {
+				_textView.Text = $"EventTime: { e.DownTime }";
+			});
+
+
+		}
 
 		public bool OnScroll (MotionEvent e1, MotionEvent e2, float distanceX, float distanceY){
 			return false;
